@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { SignUpButton } from "@insforge/nextjs";
 import Link from "next/link";
 
 const Hero = () => {
@@ -24,7 +25,9 @@ const Hero = () => {
         <div
           className="flex flex-col sm:flex-row items-center justify-center gap-4"
         >
-          <Button>Get Started</Button>
+          <SignUpButton>
+            <Button>Get Started</Button>
+          </SignUpButton>
 
           <Button variant="outline" asChild>
             <Link href="#">Live demo</Link>

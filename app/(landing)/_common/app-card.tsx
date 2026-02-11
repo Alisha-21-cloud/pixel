@@ -41,7 +41,7 @@ export function AppCard() {
 
                         {/* Dashboard preview */}
                         <div className="bg-background rounded-lg  min-h-80 max-h-full">
-                            <img src={theme === "dark" ? "/images/app-dark.png" : "/images/app-light.png"}
+                            <img src="/images/app-dark.png"
                                 alt="App Preview"
                                 className="w-full h-full object-cover"
                             />
