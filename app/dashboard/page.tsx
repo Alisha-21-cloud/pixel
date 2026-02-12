@@ -1,20 +1,31 @@
+"use client"
+
 import { Button } from "@/components/ui/button"
 import { Plus } from "lucide-react"
+import { useState } from "react"
+import AddWebsiteDialog from "./_common/add-website-dialog"
 
 const page = () => {
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    const [open, setOpen] = useState(false)
+
     return (
-        <div className="space-y-8 w-full min-h-screen">
-            <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-border pb-8">
-                <div className="space-y-1">
-                    <h1 className="text-3xl font-bold tracking-tight">Websites</h1>
-                    <p className="text-muted-foreground text-sm">Manage and monitor your digital footprint across all registered domains.</p>
+        <>
+            <div className="space-y-8 w-full min-h-screen">
+                <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-border pb-8">
+                    <div className="space-y-1">
+                        <h1 className="text-3xl font-bold tracking-tight">Websites</h1>
+                        <p className="text-muted-foreground text-sm">Manage and monitor your digital footprint across all registered domains.</p>
+                    </div>
+                    <Button onClick={() => setOpen(true)}>
+                        <Plus className="size-4" />
+                        Add Website
+                    </Button>
                 </div>
-                <Button>
-                    <Plus className="size-4" />
-                    Add Website
-                </Button>
             </div>
-        </div>
+
+            <AddWebsiteDialog open={open} onOpenChange={setOpen} />
+        </>
     )
 }
 
