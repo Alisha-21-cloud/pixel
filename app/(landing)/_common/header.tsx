@@ -43,9 +43,9 @@ const Header = () => {
                     
                     <SignedIn>
                         <UserButton />
-                        <Button variant="outline" asChild>
+                        {/* <Button variant="outline" asChild>
                             <Link href="/dashboard">Dashboard</Link>
-                        </Button>
+                        </Button> */}
                     </SignedIn>
                 </div>
             </div>
