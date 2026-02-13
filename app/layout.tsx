@@ -28,6 +28,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <script data-domain="localhost:3000"
+          data-site-id="P-FAGUZILGSHKNTXJRO5SCE" src="http://localhost:3000/js/pixel.min.js" defer>
+        </script>
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
