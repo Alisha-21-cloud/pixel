@@ -11,11 +11,11 @@ const AppSidebar = () => {
             url: "/dashboard",
             icon: Home,
         },
-        {
-            title: "Settings",
-            url: "/dashboard/settings",
-            icon: Settings,
-        },
+        // {
+        //     title: "Settings",
+        //     url: "/dashboard/settings",
+        //     icon: Settings,
+        // },
     ]
     return (
         <Sidebar>
